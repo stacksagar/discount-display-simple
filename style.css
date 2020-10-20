@@ -1,0 +1,118 @@
+body {
+ background: #333333;
+}
+
+* {
+ transition: all 0.6s !important;
+ margin: 0;
+ padding: 0;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.percent {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width: 90%;
+ margin: 20px auto;
+}
+
+.percent p {
+ background: radial-gradient(#2542a6, #333);
+ color: #fff;
+ width: 100px;
+ height: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ margin: 10px;
+ animation-name: bgChange;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-duration: 1s;
+}
+
+@keyframes bgChange {
+ 0% {
+  background: radial-gradient(#2542a6, #333);
+ }
+
+ 25% {
+  background: radial-gradient(#2542a6, #444);
+ }
+
+ 50% {
+  background: radial-gradient(#2542a6, #555);
+ }
+
+ 75% {
+  background: radial-gradient(#2542a6, #666);
+ }
+
+ 90% {
+  background: radial-gradient(#2542a6, #777);
+ }
+
+ 100% {
+  background: radial-gradient(#2542a6, #888);
+ }
+}
+
+.result {
+ transform: scale(0);
+ background: linear-gradient(to right, green, blueviolet);
+ width: 80%;
+ height: 100px;
+ padding: 40px 0px;
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ flex-direction: column;
+}
+
+.result p {
+ font-size: 18px;
+ color: #fff;
+ margin: 10px 0px;
+}
+
+.result button {
+ background: linear-gradient(to right, green, blueviolet);
+ color: #fff;
+ margin: 10px 0px;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: progress;
+}
+
+.result .removeResult {
+ position: absolute;
+ right: 0px;
+ top: 0px;
+ background: rgb(102, 3, 80); 
+ color: #fff;
+ cursor: pointer;
+ padding: 10px 20px;
+ border-radius: 8px 10px 5px 10px;
+}
+
+#getDiscount {
+ width: 150px;
+ padding:15px;
+ margin: auto;
+ display: block;
+ font-weight: bold;
+ border-radius: 11px 7px 11px 15px;
+ cursor: pointer;
+ background: linear-gradient(rgb(187, 9, 148), blueviolet);
+ color: #fff;
+}
